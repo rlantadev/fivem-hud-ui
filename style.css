@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#hud {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bar-container, .bar-container-basic {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    padding: 5px;
+}
+
+.bar-container-basic {
+    width: 60%; /* Yatay olarak küçültüldü */
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.bar {
+    height: 14px;
+    border-radius: 10px;
+    flex-grow: 1;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+}
+
+.bar-basic {
+    height: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+}
+
+#health-bar {
+    background: linear-gradient(90deg, rgb(0, 255, 149), rgb(0, 148, 86));
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 255, 149, 0.7), 0 0 8px rgba(0, 255, 149, 0.7), 0 0 12px rgba(0, 255, 149, 0.7);
+}
+
+#hunger-bar {
+    background: linear-gradient(90deg, rgb(255, 196, 0), rgba(30, 128, 87));
+    width: 100%;
+}
+
+#thirst-bar {
+    background: linear-gradient(90deg, rgba(0, 55, 138, 1), rgba(30, 128, 87));
+    width: 100%;
+}
+
+#armor-bar {
+    background: linear-gradient(90deg, rgb(0, 153, 255), rgba(30, 128, 87));
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 153, 255, 0.7), 0 0 9px rgba(30, 128, 87, 0.7), 0 0 12px rgba(30, 128, 87, 0.7);
+}
+
+#body-icon-container {
+    text-align: center;
+    margin-top: -70px;
+    margin-left: 200px;
+}
+
+.body-image {
+    width: 70px;
+    height: 50px;
+}
